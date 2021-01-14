@@ -1,0 +1,31 @@
+<!--miniprogram/pages/find/find2/find2.wxml-->
+<!-- <text>miniprogram/pages/find/find2/find2.wxml</text> -->
+
+<form bindsubmit="formSubmit">
+<view class="title">搜索日期</view>
+<view style="color:#aaa ;text-indent: 15px;">寻找和你一同出行的的伙伴</view>
+  <view class="item2">
+    <picker name="date" mode="date" value="{{date}}" start="2021-1-1" end="2099-12-31" bindchange="bindDateChange">
+    {{date}}
+    <text style="color:rgb(190, 190, 190); ">▼</text>
+    </picker>
+  </view>
+</form>
+<view class="des">
+<button class="pinkn" bindtap="FindDate"  >查找</button>
+<button class="pinkn" bindtap="Reset"  >重置</button>
+</view>
+<view class="together">
+<view wx:if="{{invites.length==0}}">暂时没有新邀请哦</view>
+  <view class="item" wx:for="{{invites}}" wx:key="_id">
+    <view data-now="{{item}}" hover-class="navigator-hover" bindtap="detail">
+      <view class='label'>邀请人：{{item.name}}</view>
+      <view class='describe'>终点：{{item.end}}</view>
+      <view class='describe'>日期：{{item.time[0]}}</view>
+      <view class='describe'>时间：{{item.time[1]}}</view>
+      <view class="enter">加入>></view>
+    </view>
+  </view>
+</view>
+
+<image class="img" src="/images/cre1.jpg" bindtap="toCre2" ></image>

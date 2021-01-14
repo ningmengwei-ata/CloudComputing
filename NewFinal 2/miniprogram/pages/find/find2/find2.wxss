@@ -1,0 +1,51 @@
+/* miniprogram/pages/find/find2/find2.wxss */
+.img{
+  float: right;
+  position: fixed;
+  bottom: 120rpx;
+  right: 20rpx; 
+  width: 80rpx;
+  height: 80rpx;
+  background-color: transparent;
+ border: none;
+}
+.item{
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 22rpx;
+  /* border-color: rgb(78, 170, 120); */
+  border-color:#ff9eae !important;
+  border-style:solid;
+}
+.item2{
+  background-color: rgb(233, 233, 233);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 22rpx;
+
+}
+.enter{
+  text-align: right;
+  font-weight:bold;
+  /* color:rgb(78, 170, 120); */
+  color:#ff9eae !important;
+}
+.des{
+  margin:5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.pinkn{
+  background-color:#f75670 !important;
+  color:#ffffff !important;
+}
+.title{
+  text-indent: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 300%;
+
+}

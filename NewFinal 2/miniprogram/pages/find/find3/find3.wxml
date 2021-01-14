@@ -1,0 +1,29 @@
+<!--miniprogram/pages/find/find3/find3.wxml-->
+<!-- <text>miniprogram/pages/find/find3/find3.wxml</text> -->
+<view class="bob">
+  <view class="a2">邀请人：{{detail.name}}</view>
+  <view class="a1">{{detail.end}}</view>
+  <view class="a1">{{detail.time}}</view>
+  <view class="a1">计划人数：{{detail.max}}</view>
+  <view class="a1">详情：{{detail.content}}</view>
+  <!--<input bindinput="bindData" data-origin="content" value="{{content}}" placeholder="请输入理由" style="margin:50px" ></input>-->
+  </view>
+  <view class="detailText">
+  <textarea 
+  wx:if="{{cunzai==false}}" 
+    placeholder="请输入理由"
+    bindblur="bindTextAreaBlur"
+    value="{{content}}"
+    >
+  </textarea>
+  <textarea 
+  wx:else
+    placeholder="{{content}}"
+    bindblur="bindTextAreaBlur"
+    value="{{content}}"
+    >
+  </textarea>
+  </view>
+
+  <button wx:if="{{cunzai==false}}" bindtap="bindtype" style="margin:30px,width:100px" type="primary">发送</button>
+  <button wx:else bindtap="bindchange" style="margin:30px,width:100px" type="primary">修改</button>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "fixedBottom" : "../../components/fixedBottom/fixedBottom",
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  },
+  "navigationBarTitleText": "发单",
+  "enablePullDownRefresh":true,
+  "navigationBarBackgroundColor": "#FE4365",
+  "navigationBarTextStyle": "white"
+}

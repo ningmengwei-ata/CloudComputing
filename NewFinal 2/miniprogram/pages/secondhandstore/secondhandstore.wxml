@@ -1,0 +1,77 @@
+<!--miniprogram/pages/secondhandstore/secondhandstore.wxml-->
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/indexBG.jpg" mode="aspectFill"></image>
+</view>
+<view class='container'>
+  <view class='top'>
+      <view class='mark'>
+        如需购买，请拨打卖家电话联系交易
+    </view>
+    <view class='find'>
+      <input placeholder='物品名称' bindinput='seekChange'></input>
+      <button bindtap='seekGoods'>搜索</button> 
+   </view>
+
+  </view>
+  <view>
+<text>\n</text>
+</view>
+  <view class='bound' style='height:220rpx;color:#f7f7f7'>...</view>
+  <view class='thing-box'>
+       <block wx:for="{{goodsList}}" wx:key="">
+         <view class='one'>
+        <image class='logo' src='{{item.cloudFileID}}'></image>
+         <view class='base'>
+              <view class='userinfo'>
+              <image class='avatars' src='{{item.avatars}}'></image>
+              <text>{{item.name}}</text>
+              </view>
+         </view>
+           <view class='price'>
+            ￥{{item.price}}<text class="{{item.area=='中山北路校区'?'area1':'area2'}}">{{item.area}}</text>
+           </view>
+           <view class='desc'>
+             {{item.desc}}
+           </view>
+
+           <text class='detail'>电话：{{item.contact}}</text>
+         
+         </view>
+          </block>
+  </view>
+
+
+  <view class='add'  bindtap='toggleFormBox' data-val="1">
+      <image src='cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/sale.png'></image>
+   </view>
+</view>
+
+
+<block wx:if="{{showformbox}}">
+
+<view class='form-box'>
+    <image class='logo'   src='{{info.logo}}'  bindtap='chooseImage'>
+     </image>
+     <input class='contact' placeholder='姓名（最大长度为6）' maxlength="6" bindinput='infomodify' data-col="name"></input> 
+     <input class='contact' placeholder='联系方式' maxlength="15" bindinput='infomodify' data-col="contact"  type='number'></input>
+     <input class='contact' placeholder='价格' maxlength="10" bindinput='infomodify' data-col="price" type='number'></input>
+     <input class='desc' placeholder='物品描述（不超过20字）' maxlength="20" bindinput='infomodify' data-col="desc"></input>
+
+<radio-group class="radio-group" bindchange="radioChange">
+            <view> <radio value="中山北路校区" checked/>中山北路校区 </view>
+              <view>  <radio value="闵行校区" />闵行校区  </view>        
+</radio-group>
+    
+
+      <view class='submit1' bindtap='saveFormboxcontent'>提交</view>
+      <view class='submit2' bindtap='backFormboxcontent'>返回</view>
+</view> 
+</block>
+
+
+<block wx:if="{{errortest}}">
+<view class='form-box'>
+      <view class='desc'>表单不完整或发生错误，返回主页后重新填写</view>
+      <view class='submit' bindtap='backFormboxcontent'>返回</view>
+</view> 
+</block>

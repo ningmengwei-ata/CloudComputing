@@ -1,0 +1,23 @@
+<!--pages/send/send.wxml-->
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/background1.png" mode="aspectFill"></image>
+</view>
+<view class="send-wrap">
+    <view class="list-box" data-id='{{item._id}}' bindtap="taskDetail" wx:for="{{dataList}}" wx:key="id">
+        <view class="head">
+            <view class="title"><text>任务：{{item.title}}</text></view>
+            <!-- <view data-id='{{item._id}}' catchtap="deleteTaskDialog" class="delete-btn"><mp-icon icon="delete" color="#df0000" size="{{24}}"></mp-icon></view> -->
+        </view>
+        <view><text>赏金:{{item.money}}</text></view>
+        <view class="content-box">
+            <view>详情:</view>
+            <view class="content">{{item.content}}</view>
+        </view>
+    </view>
+    <!-- <fixedBottom>
+        <button class="foot" slot="button" bindtap="sendOrder" >发布</button>
+    </fixedBottom> -->
+    <!-- <mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>是否确认删除</view>
+    </mp-dialog> -->
+</view>

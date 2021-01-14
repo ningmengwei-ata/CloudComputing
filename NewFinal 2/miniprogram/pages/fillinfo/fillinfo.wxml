@@ -1,0 +1,38 @@
+<!--miniprogram/pages/fillinfo/fillinfo.wxml-->
+<!-- <text>miniprogram/pages/fillinfo/fillinfo.wxml</text> -->
+<!--pages/fillinfo/fillinfo.wxml-->
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/indexBG.jpg" mode="aspectFill"></image>
+</view>
+<view>
+<text>\n</text>
+</view>
+<view class="Tooltip">{{infomess2}}</view>
+<view class="itemView2">姓名：
+    <input class="input"  placeholder="请输入姓名" 
+    bindinput="userNameInput"/>
+  </view>
+<view class="itemView2">学号：
+    <input class="input"  placeholder="请输入学号"
+     bindinput="Student_idInput" />
+  </view>
+  <view class="itemView2">联系方式：
+    <input class="input"  placeholder="请输入联系方式"
+     bindinput="ContactInput" />
+  </view>
+   <view class="itemView2">校区：
+    <input class="input"  placeholder="请输入校区"
+     bindinput="CampusInput" />
+  </view>
+  <view class="itemView2">宿舍：
+    <input class="input"  placeholder="请输入宿舍"
+     bindinput="DormInput" />
+  </view>
+  <!--这个是干啥用的没看懂-->
+  <view>
+<text>\n</text>
+</view>
+<view class="viewName" >
+  <button class="loginBtn"bindtap="addData" >绑定</button>
+</view>
+<view>{{infoMess}}</view>

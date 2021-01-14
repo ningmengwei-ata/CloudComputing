@@ -1,0 +1,33 @@
+<!--pages/createinvitation/cre2/cre2.wxml-->
+<view class="title" >创建新邀请</view>
+<view class="crecontainer">
+<view class="creform">
+<form bindsubmit="formSubmit">
+  <text class="small-title">目的地</text>
+  <view class="part" hover-class="navigator-hover">
+    <picker name="dest" bindchange="bindPickerChange" value="{{index}}" range="{{dest}}">
+    {{dest[index]}}
+    </picker>
+  </view>
+  <text class="small-title">日期</text>
+  <view class="part" hover-class="navigator-hover">
+    <picker name="date" mode="date" value="{{date}}" start="2020-1-1" end="2099-12-31" bindchange="bindDateChange">
+    {{date}}
+    </picker>
+  </view>
+  <text class="small-title">时间</text>
+  <view class="part" hover-class="navigator-hover">
+    <picker name="time" mode="time" value="{{time}}" bindchange="bindTimeChange">
+    {{time}}
+    </picker>
+  </view>
+  <text class="small-title">计划同行人数</text>
+  <view class="part">
+    <slider value="{{max}}" name="number" min="1" max="9" bindchange="numberchange" show-value />
+  </view>
+  <text class="small-title">其他说明</text>
+  <textarea name="content" placeholder="请输入说明" style="height:100px"/>
+  <button formType="submit" class="pinkn">创建</button>
+</form>
+</view>
+</view>

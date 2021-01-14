@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fixedBottom" : "../../components/fixedBottom/fixedBottom",
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  },
+  "navigationBarTitleText": "发单内容",
+  "navigationBarBackgroundColor": "#FE4365",
+  "navigationBarTextStyle": "white"
+}

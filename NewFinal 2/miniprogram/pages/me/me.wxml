@@ -1,0 +1,10 @@
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/background1.png" mode="aspectFill"></image>
+</view>
+
+<view class='container'> 
+
+<button bindtap="jump" type='primary' class='btn3' >我的发单任务</button>
+
+
+</view>

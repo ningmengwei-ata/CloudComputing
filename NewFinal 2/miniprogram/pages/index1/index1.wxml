@@ -1,0 +1,40 @@
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/indexBG.jpg" mode="aspectFill"></image>
+</view>
+<!-- <view class="together"> -->
+<view class='containers'>
+<view class='top'>
+      <view class='mark'>
+        如您想接单，请与发单人电话联系
+    </view>
+</view>
+</view>
+<view class="together">
+<view wx:if="{{tasks.length==0}}">暂时没有新的接单哦</view>
+  <view class="item" wx:for="{{tasks}}" wx:key="_id">
+    <!-- <view data-now="{{item}}" hover-class="navigator-hover" bindtap="detail"> -->
+      <view class='label'>任务：{{item.title}}</view>
+      <view class='describe'>任务详情：{{item.content}}</view>
+      <view class='describe'>赏金：{{item.money}}</view>
+      <view class='describe'>发单人：{{item.name}}</view>
+      <view class='describe'>电话：{{item.phone}}</view>
+      
+    <!-- </view> -->
+  </view>
+</view>
+<!-- <view wx:for="{{tasks}}" wx:key="_id">
+<navigator url="../detail/detail?id={{item._id}}" class="container">
+  <view class='label'>任务：{{item.title}}</view>
+  <view class='describe'><text>任务详情：{{item.content}}\n
+  发单人：{{item.name}}</text>
+  </view>
+   <view class='describe'>发单人：{{item.name}}</view> -->
+  <!-- <view class='label'>{{item.dec}}</view> -->
+  <!-- <view class='describe'>任务详情：{{}}</view> -->
+<!-- 标题:<label>{{item.dec}}</label> -->
+<!-- 描述:<label>{{}}</label> -->
+<!-- </navigator>
+
+</view> --> 
+
+<button  class="myButton" bindtap="jumpfa" >前往发单</button>

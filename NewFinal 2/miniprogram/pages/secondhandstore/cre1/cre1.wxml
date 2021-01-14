@@ -1,0 +1,41 @@
+<!--miniprogram/pages/secondhandstore/secondhandstore.wxml-->
+<view class='container'>
+  <view class='top'>
+      <view class='mark'>
+        查看我的集市，已成交的商品请及时删除
+    </view>
+    <view class='find'>
+      <input placeholder='物品名称' bindinput='seekChange'></input>
+      <button bindtap='seekGoods'>搜索</button> 
+   </view>
+  </view>
+
+  <view class='bound' style='height:220rpx;color:#f7f7f7'>...</view>
+  <view class='thing-box'>
+       <block wx:for="{{goodsList}}" wx:key="">
+         <view class='one'>
+        <image class='logo' src='{{item.cloudFileID}}'></image>
+         <view class='base'>
+              <view class='userinfo'>
+                <image class='avatars' src='{{item.avatars}}'></image>
+              <text>{{item.name}}</text>
+             
+              </view>
+         </view>
+           <view class='price'>
+            ￥{{item.price}}<text class="{{item.area=='中山北路校区'?'area1':'area2'}}">{{item.area}}</text>
+           </view>
+           <view class='desc'>
+             {{item.desc}}
+           </view>
+
+           <text class='detail'>电话：{{item.contact}}</text>
+           <button type="warn" size="mini" z-index: -1 data-value="{{item._id}}" bindtap="delete_this" hover-class="other-button-hover"> 删除 </button>
+         
+         </view>
+          </block>
+  </view>
+</view>
+
+
+

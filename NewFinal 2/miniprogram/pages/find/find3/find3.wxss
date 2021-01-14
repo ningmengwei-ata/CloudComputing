@@ -1,0 +1,32 @@
+/* miniprogram/pages/find/find3/find3.wxss */
+/* pages/findinvation/find3/find3.wxss */
+.bob{
+  background-color:  rgb(202, 240, 219);
+  border-radius: 15px;
+  margin: 15px;
+  
+}
+.a1{ background-color: rgb(202, 240, 219);
+  padding: 10px;
+  line-height: 100%;
+}
+.title{
+  text-indent: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 200%;
+}
+.a2{
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+
+}
+.detailText{
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 22rpx;
+  border-color: rgb(78, 170, 120);
+  border-style:solid;
+}

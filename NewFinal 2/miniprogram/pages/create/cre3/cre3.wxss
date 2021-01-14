@@ -1,0 +1,22 @@
+/* miniprogram/pages/create/cre3/cre3.wxss */
+.bob{
+  background-color:  rgb(202, 240, 219);
+  border-radius: 15px;
+  margin: 15px;
+  
+}
+.a1{ background-color: rgb(202, 240, 219);
+  padding: 10px;
+  line-height: 150%;
+}
+.title{
+  text-indent: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 200%;
+}
+.a2{
+  font-size: 20px;
+  padding: 10px;
+
+}

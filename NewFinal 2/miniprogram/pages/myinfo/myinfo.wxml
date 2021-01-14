@@ -1,0 +1,15 @@
+<!--miniprogram/pages/myinfo/myinfo.wxml-->
+<!--pages/userinfo/userinfo.wxml-->
+<view>
+ <image class="background" src="cloud://data-nk0cg.6461-data-nk0cg-1302648785/images/5252.jpg" mode="aspectFill"></image>
+</view>
+<view class="user_inf">个人信息</view>
+<view class="item">姓名：        {{Personal[0].Name}}</view>
+<view class="item">学号：        {{Personal[0].Student_id}}</view>
+<view class="item">联系方式:     {{Personal[0].Contact}}</view>
+<view class="item">校区：        {{Personal[0].Campus}}</view>
+<view class="item">宿舍信息：        {{Personal[0].Dorm}}</view>
+<view class="des">
+<button bindtap="revise" type="primary" >修改</button>
+<button bindtap="logout" type="primary" >注销</button>
+</view>

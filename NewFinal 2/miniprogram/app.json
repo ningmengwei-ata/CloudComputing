@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fillinfo/fillinfo",
+    "pages/myinfo/myinfo",
+    "pages/frontdemo/frontdemo",
+    "pages/find/find1/find1",
+    "pages/find/find2/find2",
+    "pages/find/find3/find3",
+    "pages/create/cre1/cre1",
+    "pages/create/cre2/cre2",
+    "pages/create/cre3/cre3",
+    "pages/campustrip/campustrop",
+    "pages/secondhandstore/secondhandstore",
+    "pages/secondhandstore/cre1/cre1",
+    "pages/send/send",
+    "pages/sendContent/sendContent",
+    "pages/index1/index1",
+    "pages/me/me",
+    "pages/mytask/mytask",
+    "pages/send1/send1"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "丽娃河",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/我的1.png",
+        "selectedIconPath": "/images/我的2.png"
+      },
+      {
+        "pagePath": "pages/frontdemo/frontdemo",
+        "text": "出行",
+        "iconPath": "/images/查找1.png",
+        "selectedIconPath": "/images/查找2.png"
+      },
+      {
+        "pagePath": "pages/secondhandstore/secondhandstore",
+        "text": "集市",
+        "iconPath": "/images/市场1.png",
+        "selectedIconPath": "/images/市场2.png"
+      },
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "跑腿",
+        "iconPath": "/images/跑腿1.png",
+        "selectedIconPath": "/images/跑腿2.png"
+      }
+    ],
+    "color": "#515151"
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,34 @@
+<!--miniprogram/pages/create/cre3/cre3.wxml-->
+<!-- <text>miniprogram/pages/create/cre3/cre3.wxml</text> -->
+<view class="title">邀请详情</view>
+  <view class="bob">
+    <view class="a2">{{detail.end}}</view>
+    <view class="a2">{{detail.time}}</view>
+    <view class="a1">计划人数：{{detail.max}}</view>
+    <view class="a1">
+      <text>备注：\n{{detail.content}}</text>
+    </view>
+  </view>
+
+<view class="title">
+申请的列表</view>
+
+<form bindsubmit="formSubmit" wx:if="{{detail.member.length==0}}">
+  <text wx:if="{{applyList.length==0}}">暂时无人申请加入</text>
+  <checkbox-group bindchange="change">
+  <view wx:for="{{applyList}}" wx:key="_id" style="margin:25px;">
+    <text style="font-size:20px">{{item.idname}}</text>
+    <checkbox value="{{item._openid}}" />
+    <view style="font-size:20px; color: rgb(152, 152, 152)">申请详情：{{item.content}}</view>
+  </view>
+  </checkbox-group>
+ <button form-type="submit" >确认</button>
+</form>
+<view wx:else style="margin:25px;">
+<block wx:for="{{applyList}}" wx:key="_id" >
+<view wx:if="{{item.flag}}" style="font-size:20px">
+<text >{{item.idname}} </text>
+<view style="font-size:20px; color: rgb(152, 152, 152)">联系方式：{{item.phone}}</view>
+</view>
+</block>
+</view>

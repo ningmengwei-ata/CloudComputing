@@ -1,0 +1,31 @@
+/* pages/mytaskdetail/mytaskdetail.wxss */
+.container{
+  padding-bottom: 20rpx;
+  width: 100 vh;
+  height: 100 vh;
+  background-size: 80% 30%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  margin-top: 20%;
+  padding-top:  50%;
+
+}
+
+.describe{
+  width: 80%;
+  font-size: large;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+.delete{
+  height:50%;
+  /* background-color:  #8bcac5; */
+  align-items: center;
+}
+.detail{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}

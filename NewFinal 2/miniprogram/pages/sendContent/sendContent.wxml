@@ -1,0 +1,46 @@
+<!-- <view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/background1.png" mode="aspectFill"></image>
+</view> -->
+<view class="send-content-wrap">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+        <mp-cells title="" footer="">
+            <mp-cell  show-error prop="title" title="标题" ext-class="">
+                <input value="{{formData.title}}" bindinput="formInputChange" maxlength="15" data-field="title" class="weui-input" placeholder="请输入标题"/>
+            </mp-cell>
+            <mp-cell  show-error prop="money" title="赏金" ext-class="">
+                <input value="{{formData.money}}" bindinput="formInputChange" maxlength="15" data-field="money" class="weui-input" placeholder="请输入赏金"/>
+            </mp-cell>
+            <mp-cell  show-error prop="name" title="发单人" ext-class="">
+                <input value="{{formData.name}}" bindinput="formInputChange" maxlength="20" data-field="name" class="weui-input" placeholder="请输入您的姓名"/>
+            </mp-cell>
+            <mp-cell  show-error prop="phone" title="电话" ext-class="">
+                <input value="{{formData.phone}}" bindinput="formInputChange" maxlength="20" data-field="phone" class="weui-input" placeholder="请输入您的手机号"/>
+            </mp-cell>
+            <!-- <i-input  bind:change='inputName' maxlength="15" title="标题" autofocus placeholder="请输入标题" />
+            <i-input  bind:change='inputPhone' maxlength="15" title="赏金" autofocus placeholder="请输入赏金" />
+            <i-input type="textarea"  placeholder="请输入详细内容"></i-input> -->
+            <!-- <i-input type="textarea" :rows="4"  bind:change='inputPassword' title="详细内容" autofocus placeholder="请输入详细内容" /> -->
+        </mp-cells>
+        <view class="weui-cells__title">详细内容</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd" prop="content">
+                        <mp-cell show-error prop="content" ext-class="">
+                            <textarea value="{{formData.content}}" bindinput="formTextareaChange" class="weui-textarea" data-field="content" placeholder="请输入详细内容" maxlength="200" />
+                            <view class="weui-textarea-counter">{{detailLength}}/200</view>
+                        </mp-cell>
+                    </view>
+                </view>
+            </view>
+    </mp-form>
+    <fixedBottom>
+        <button class="cancel-btn" slot="button" bindtap="cancel">取消</button>
+        <button class="confirm" slot="button" bindtap="confirmDialog" >提交</button>
+    </fixedBottom>
+    <mp-dialog title="提示" show="{{cancelDialogShow}}" bindbuttontap="tapCancelDialogButton" buttons="{{buttons}}">
+        <view>是否确认取消</view>
+    </mp-dialog>
+    <mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>是否确认提交</view>
+    </mp-dialog>
+</view>

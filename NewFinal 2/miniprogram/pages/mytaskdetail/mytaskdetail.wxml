@@ -1,0 +1,4 @@
+<view class="contaienr">
+<view class="describe">任务描述：</view>
+<label class="detail">{{detail.content}} </label>
+</view>

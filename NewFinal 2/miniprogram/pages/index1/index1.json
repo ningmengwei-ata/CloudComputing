@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "跑腿接单信息",
+  "navigationBarBackgroundColor": "#FE4365",
+  "navigationBarTextStyle": "white"
+}

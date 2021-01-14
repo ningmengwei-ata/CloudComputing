@@ -1,0 +1,25 @@
+<!--miniprogram/pages/find/find1/find1.wxml-->
+<!-- <text>miniprogram/pages/find/find1/find1.wxml</text> -->
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/indexBG.jpg" mode="aspectFill"></image>
+</view>
+<view class="container">
+<!-- <text>成功加入的邀请</text> -->
+  
+  <scroll-view scroll-y="true" style="height:250px;">
+  <block wx:for="{{invites}}" wx:key="id" bindscroll="scroll">
+  <view class="item">
+    <view>{{item.dest}} {{item.time}}</view>
+    <view>计划人数：{{item.people}}</view>
+    <view>状态：{{item.status}}</view>
+<navigator url="/pages/find/find3/find3?id={{item._id}}" class="container" hover-class="none">
+    <button class="itembuttom" type="primary" style="width:100px;margin:auto; " hover-class="none">查看</button>
+</navigator>
+
+  </view>
+  </block>
+  </scroll-view>
+  <view class="buttons">
+    <button class="pink" bindtap="toFind2" >查找新邀请</button>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+/* miniprogram/pages/find/find1/find1.wxss */
+/* pages/findinvation/find1/find1.wxss */
+button{
+  width:160px
+  
+}
+.background{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+.pink{
+  background-color:#ff9eae !important;
+  border-radius:42px;
+  border:3px solid #f27489 !important;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff !important;
+  font-family:Arial;
+  font-size:15px;
+  padding:8px 37px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #faa0af !important;
+}
+.item{
+  background-color:#ddd;
+  margin: 10px;
+  padding: 10px;
+}

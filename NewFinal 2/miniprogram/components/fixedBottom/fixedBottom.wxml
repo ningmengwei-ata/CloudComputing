@@ -1,0 +1,3 @@
+<view class="fixed-bottom-wrap">
+    <slot name="button"></slot>
+</view>

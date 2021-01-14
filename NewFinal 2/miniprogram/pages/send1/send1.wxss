@@ -1,0 +1,58 @@
+/* pages/send/send.wxss */
+.send-wrap{
+    position: relative;
+    padding-bottom:140rpx;
+    
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+.send-wrap .list-box{
+    position: relative;
+    box-sizing:border-box;
+    padding:20rpx;
+    width:100%;
+    margin-bottom:20rpx;
+    background:#fff;
+    box-shadow: 0px 20prx 10rpx rgba(255,255,255,0.9)
+}
+
+.send-wrap .list-box .title{
+    width:80%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    border-radius: 30rpx;
+}
+
+.send-wrap .list-box .content{
+    color:#666;
+    font-size:36rpx;
+}
+.foot{
+  background-color:#ff9eae !important;
+  border-radius:42px;
+  border:3px solid #f27489 !important;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff !important;
+  font-family:Arial;
+  font-size:15px;
+  padding:8px 37px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #faa0af !important;
+}
+.send-wrap .list-box .delete-btn{
+    position: absolute;
+    right:20rpx;
+    top:20rpx;
+    color:#df0000;
+}
+.head{
+    border-radius: 20rpx;
+}

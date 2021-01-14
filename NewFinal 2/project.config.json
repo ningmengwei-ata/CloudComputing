@@ -1,0 +1,122 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": true,
+		"useApiHook": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enableEngineNative": false,
+		"bundle": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"appid": "wxee86a9364b41f67e",
+	"projectname": "New%202",
+	"libVersion": "2.14.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/fillinfo/fillinfo",
+					"pathName": "pages/fillinfo/fillinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/myinfo/myinfo",
+					"pathName": "pages/myinfo/myinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/frontdemo/frontdemo",
+					"pathName": "pages/frontdemo/frontdemo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/find/find1/find1",
+					"pathName": "pages/find/find1/find1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/find/find2/find2",
+					"pathName": "pages/find/find2/find2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/find/find3/find3",
+					"pathName": "pages/find/find3/find3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/create/cre1/cre1",
+					"pathName": "pages/create/cre1/cre1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/create/cre2/cre2",
+					"pathName": "pages/create/cre2/cre2",
+					"scene": null
+				},
+				{
+					"name": "pages/secondhandstore/secondhandstore",
+					"pathName": "pages/secondhandstore/secondhandstore",
+					"scene": null
+				},
+				{
+					"name": "pages/secondhandstore/cre1/cre1",
+					"pathName": "pages/secondhandstore/cre1/cre1",
+					"scene": null
+				}
+			]
+		}
+	}
+}

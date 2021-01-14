@@ -1,0 +1,44 @@
+<!--pages/createinvitation/cre1/cre1.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item1 {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap" >{{item}}</text>
+</view>
+<view wx:if="{{currentTab==0}}">
+  <view class="container">
+<scroll-view scroll-y="true" style="height:400px;">
+<text hidden="{{empty1}}">未创建任何邀请</text>
+<block wx:for="{{creinvation}}" wx:key="id" bindscroll="scroll">
+<view class="item">
+  <view style="font-weight:bold; font-size:20px; line-height: 150%;">{{item.end}} {{item.time}}</view>
+  <view>计划人数：{{item.max}}</view>
+  <view>状态：{{crestatus[item.status]}}</view>
+  <view class="buttons">
+    <button class="itembuttom" type="default" bindtap="credetail" data-now="{{item}}" size="mini">查看</button>
+    <button type="warn" bindtap="credel" size="mini" data-now="{{item._id}}">删除</button>
+  </view> 
+</view>
+</block>
+</scroll-view>
+</view>
+</view>
+
+<view wx:elif="{{currentTab==1}}">
+  <view class="container">
+  <scroll-view scroll-y="true" style="height:400px;">
+  <text hidden="{{empty2}}">未发出任何申请</text>
+  <block wx:for="{{finvation}}" wx:key="id" bindscroll="scroll">
+  <view class="item">
+    <view style="font-weight:bold; font-size:20px; line-height: 150%;">{{item.end}} {{item.time}}</view>
+    <view>状态：{{findstatus[item.flag?1:0]}}</view>
+    <view class="buttons">
+      <button type="default" bindtap="finddetail" data-now="{{item.invite_name}}" size="mini">查看</button>
+      <button type="warn" bindtap="findel" size="mini" data-now="{{item._id}}">删除</button>
+    </view>
+  </view>
+  </block>
+  </scroll-view>
+</view>
+</view>
+
+<!-- <button bindtap="getcrelis" type="primary">getcrelis测试</button> -->
+
+<!-- <image class="img" src="/images/cre.jpg" bindtap="toCre2" ></image> -->

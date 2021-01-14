@@ -1,0 +1,10 @@
+<view class='together'>
+<view wx:for="{{tasks}}" wx:key="_id" >
+<navigator url="../mytaskdetail/mytaskdetail?id={{item._id}}" class="container">
+<view class='label'>任务:{{item.title}}</view>
+<view class='describe'><text>任务详情：{{item.content}}\n
+  发单人：{{item.name}}</text></view>
+</navigator>
+
+</view>
+</view>

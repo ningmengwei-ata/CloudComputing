@@ -1,0 +1,58 @@
+/* miniprogram/pages/create/cre1/cre1.wxss *//* pages/createinvitation/cre1/cre1.wxss */
+page{
+  background-color: 
+  #ffffff;
+}
+.item{
+  background-color: rgb(202, 240, 219);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 22rpx;
+}
+.buttons{
+  margin:5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+button{
+  margin:auto;
+}
+
+.img{
+  float: right;
+  position: fixed;
+  bottom: 120rpx;
+  right: 20rpx; 
+  width: 80rpx;
+  height: 80rpx;
+  background-color: transparent;
+ border: none;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 35rpx;
+  color: #bbb;
+}
+.navbar .item1{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 90rpx;
+}
+.navbar .item1.active{
+  color: #368b54;
+}
+.navbar .item1.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rpx;
+  background: #368b54;
+}

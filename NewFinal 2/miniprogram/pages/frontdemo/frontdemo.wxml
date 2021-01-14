@@ -1,0 +1,49 @@
+<!--miniprogram/pages/frontdemo/frontdemo.wxml-->
+<!-- <text>miniprogram/pages/frontdemo/frontdemo.wxml</text> -->
+<!--pages/demo/demo.wxml-->
+<view>
+ <!-- <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/ECNU_Emblem.svg" mode="aspectFill"></image> -->
+</view>
+<view>
+ <image class="background" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/indexBG.jpg" mode="aspectFill"></image>
+</view>
+
+<view class="container">
+<view class="des">
+      <text>\n</text>
+
+      <view class="txt2">
+   选择你的目的地
+</view>
+   </view>
+   <view>
+      <text>\n</text>
+   </view>
+<view class="des">
+  <!--这里的图片也是用了云存储的形式-->
+      <navigator class="box" url="/pages/find/find2/find2?end=浦东国际机场"  >
+            <image class="pic" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/上海浦东机场.jpg" ></image>
+            <view class="txt">浦东国际机场</view>
+      </navigator>
+      <navigator class="box" url="/pages/find/find2/find2?end=上海南火车站"  >
+            <image class="pic" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/上海南火车站.jpg" ></image>
+            <view class="txt">上海南火车站</view>
+      </navigator>
+      <navigator class="box" url="/pages/find/find2/find2?end=上海火车站"  >
+            <image class="pic" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/上海火车站.jpg" ></image>
+            <view class="txt">上海火车站</view>
+      </navigator>
+      <navigator class="box" url="/pages/find/find2/find2?end=上海虹桥枢纽" >
+            <image class="pic" src="cloud://liwapaotui-3gzl16crdee48e86.6c69-liwapaotui-3gzl16crdee48e86-1304586505/上海虹桥火车站.jpg" ></image>
+            <view class="txt">上海虹桥枢纽</view>
+      </navigator>
+</view>
+<view>
+<text>\n</text>
+</view>
+
+</view>
+
+<button  class="myButton" bindtap="jumpfind" >查找出行</button>
+
+
